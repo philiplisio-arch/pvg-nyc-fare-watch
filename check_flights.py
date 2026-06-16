@@ -45,8 +45,8 @@ CONNECTOR_CLASS = os.getenv("CONNECTOR_CLASS", "1")     # 1 = economy (cheapest)
 CURRENCY        = "USD"
 
 ALERT_TO            = os.getenv("ALERT_TO", "jeannekang@hotmail.com")
-AGENTMAIL_API_KEY   = os.getenv("AGENTMAIL_API_KEY", "")
-AGENTMAIL_INBOX_ID  = os.getenv("AGENTMAIL_INBOX_ID", "")  # optional; auto-discovered if blank
+AGENTMAIL_API_KEY   = os.getenv("AGENTMAIL_API_KEY", "").strip()
+AGENTMAIL_INBOX_ID  = os.getenv("AGENTMAIL_INBOX_ID", "").strip()  # optional; auto-discovered if blank
 AGENTMAIL_BASE      = "https://api.agentmail.to/v0"
 EMAIL_ENABLED       = bool(AGENTMAIL_API_KEY)
 
