@@ -55,6 +55,7 @@ SERPAPI_KEY     = os.getenv("SERPAPI_KEY", "")
 STATE_FILE      = "state.json"
 REALERT_HOURS   = float(os.getenv("REALERT_HOURS", "24"))
 HTTP_TIMEOUT    = 40
+SEND_TEST       = os.getenv("SEND_TEST", "").strip().lower() in ("1", "true", "yes")
 
 HUB_NAMES = {"ICN": "Seoul", "GMP": "Seoul", "NRT": "Tokyo", "HND": "Tokyo"}
 
@@ -252,7 +253,8 @@ def send_email(subject, html_body):
             AGENTMAIL_BASE + "/inboxes/" + inbox_id + "/messages/send",
             headers={"Authorization": "Bearer " + AGENTMAIL_API_KEY,
                      "Content-Type": "application/json"},
-            json={"to": ALERT_TO, "subject": subject, "html": html_body,
+            json={"to": [a.strip() for a in ALERT_TO.split(",") if a.strip()],
+                  "subject": subject, "html": html_body,
                   "text": "Business-class fare alert - open the HTML version for details."},
             timeout=HTTP_TIMEOUT)
         r.raise_for_status()
@@ -472,6 +474,28 @@ def email_body(best, now):
         "</body></html>")
 
 
+def test_email_body(best, now):
+    lowest = ("$" + e(best["price"]) + " (" + e(best["kind"]) + ")") if best else "no fares returned this run"
+    return (
+        "<html><body style=\"font-family:Arial,sans-serif;line-height:1.5\">"
+        "<h2>✅ Test alert - Shanghai &rarr; New York fare watcher is working</h2>"
+        "<p>This is a <b>test email</b> confirming that price alerts are set up correctly. "
+        "No action needed.</p>"
+        "<p><b>What this is:</b> an automated watcher that checks business-class fares from "
+        "<b>Shanghai (PVG) &rarr; New York (EWR/JFK)</b>, departing <b>" + e(OUTBOUND_DATE) +
+        "</b> and returning <b>" + e(RETURN_DATE) + "</b>, every hour.</p>"
+        "<p>It compares booking <b>direct</b> against a cheaper <b>Seoul/Tokyo split</b> "
+        "(a Seoul/Tokyo&harr;New York business round trip plus a separate economy Shanghai&harr;hub "
+        "connector), limited to <b>United, Chinese, Japanese &amp; Korean</b> airlines.</p>"
+        "<p>When the cheapest complete journey drops <b>under $" + e(int(THRESHOLD_USD)) +
+        "</b>, you'll get an email like this with the price, airlines, dates, and booking links.</p>"
+        "<p><b>Current lowest:</b> " + lowest + ".</p>"
+        "<p>Live page: <a href=\"https://philiplisio-arch.github.io/pvg-nyc-fare-watch/\">"
+        "philiplisio-arch.github.io/pvg-nyc-fare-watch</a></p>"
+        "<p style=\"color:#666;font-size:12px\">Sent " + e(now) + " as a one-off test. Automated watcher.</p>"
+        "</body></html>")
+
+
 # --------------------------------------------------------------------------- #
 # Main
 # --------------------------------------------------------------------------- #
@@ -484,6 +508,10 @@ def main():
     journeys, components, best_hub = build()
     best = journeys[0] if journeys else None
     deal = bool(best and best["price"] <= THRESHOLD_USD)
+
+    if SEND_TEST:
+        sent = send_email("✅ Test - PVG->NYC fare watcher is working", test_email_body(best, now))
+        log("Test email " + ("sent" if sent else "NOT sent (check AGENTMAIL_API_KEY)"))
 
     state = load_state()
     if deal and EMAIL_ENABLED and should_alert(best, state):
