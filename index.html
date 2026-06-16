@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="refresh" content="900">
+<title>PVG → NYC · Business Class Fare Watch</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+ :root{
+   --bg:#0a0e1a;--bg2:#0f1426;--card:#151c33;--card2:#1b2440;
+   --ink:#eef2fb;--mut:#94a1c4;--line:#28324f;
+   --good:#22c55e;--good-d:#16a34a;--accent:#6c9bff;--amber:#f59e0b;
+ }
+ *{box-sizing:border-box}
+ html{-webkit-text-size-adjust:100%}
+ body{margin:0;color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;
+   background:radial-gradient(1200px 600px at 80% -10%,rgba(108,155,255,.18),transparent 60%),
+              radial-gradient(900px 500px at -10% 10%,rgba(34,197,94,.10),transparent 55%),var(--bg);}
+ .wrap{max-width:1040px;margin:0 auto;padding:30px 20px 70px}
+ .top{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap}
+ h1{font-size:27px;font-weight:800;letter-spacing:-.02em;margin:0}
+ .pill{display:inline-flex;align-items:center;gap:7px;background:var(--card);border:1px solid var(--line);
+   color:var(--mut);font-size:13px;font-weight:500;padding:6px 12px;border-radius:999px}
+ .dot{width:8px;height:8px;border-radius:50%;background:var(--good);box-shadow:0 0 0 4px rgba(34,197,94,.18)}
+ .route-line{color:var(--mut);font-size:15px;margin:6px 0 22px;font-weight:500}
+ .route-line b{color:var(--ink);font-weight:600}
+
+ .hero{border-radius:20px;padding:26px 28px;margin:6px 0 22px;position:relative;overflow:hidden;border:1px solid var(--line)}
+ .hero.deal{background:linear-gradient(135deg,rgba(34,197,94,.22),rgba(34,197,94,.06));border-color:rgba(34,197,94,.55)}
+ .hero.watch{background:linear-gradient(135deg,var(--card2),var(--card))}
+ .hero-tag{font-size:12px;font-weight:700;letter-spacing:.14em;color:var(--mut)}
+ .hero.deal .hero-tag{color:var(--good)}
+ .hero-price{font-size:52px;font-weight:800;letter-spacing:-.03em;margin:2px 0 2px;line-height:1}
+ .hero-sub{color:var(--mut);font-size:15px;margin-bottom:16px}
+ .hero-cta{display:inline-block;background:var(--good-d);color:#fff;font-weight:600;font-size:15px;
+   padding:11px 20px;border-radius:12px;text-decoration:none;transition:transform .08s ease}
+ .hero-cta:hover{transform:translateY(-1px)}
+ .hero-cta.ghost{background:transparent;border:1px solid var(--accent);color:var(--accent)}
+
+ .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:0 0 26px}
+ @media(max-width:640px){.grid{grid-template-columns:repeat(2,1fr)}.hero-price{font-size:42px}}
+ .stat{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 18px}
+ .stat .k{color:var(--mut);font-size:12.5px;font-weight:500;letter-spacing:.02em}
+ .stat .v{font-size:23px;font-weight:700;margin-top:5px;letter-spacing:-.01em}
+ .stat .v.sm{font-size:14px;font-weight:600;line-height:1.35}
+
+ .sec{font-size:14px;font-weight:600;color:var(--mut);margin:0 0 10px;letter-spacing:.02em}
+ .table-card{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+ table{width:100%;border-collapse:collapse}
+ th,td{text-align:left;padding:13px 16px;font-size:14px;border-bottom:1px solid var(--line)}
+ th{color:var(--mut);font-weight:600;font-size:12px;letter-spacing:.05em;text-transform:uppercase;background:rgba(255,255,255,.02)}
+ tr:last-child td{border-bottom:none}
+ tbody tr:hover{background:rgba(108,155,255,.06)}
+ td.price{font-weight:800;font-size:16px;white-space:nowrap}
+ td.air{font-weight:500}
+ td.route{color:var(--mut)} td.src{color:var(--mut);font-size:13px}
+ .chip{display:inline-block;font-size:11.5px;font-weight:600;padding:3px 9px;border-radius:999px}
+ .k-non{background:rgba(34,197,94,.16);color:#7ee2a0}
+ .k-con{background:rgba(108,155,255,.16);color:#a8c2ff}
+ .k-split{background:rgba(245,158,11,.16);color:#f7c267}
+ .tag{display:inline-block;font-size:10.5px;font-weight:700;padding:2px 7px;border-radius:6px;margin-left:7px;vertical-align:middle}
+ .tag-best{background:var(--good);color:#06210f}
+ .tag-via{background:rgba(245,158,11,.18);color:#f7c267}
+ a.book{color:var(--accent);font-weight:600;text-decoration:none;white-space:nowrap}
+ a.book:hover{text-decoration:underline}
+ footer{color:var(--mut);font-size:12.5px;margin-top:24px;line-height:1.6}
+ footer b{color:#b9c4e0}
+</style></head><body><div class="wrap">
+ <div class="top">
+   <h1>Shanghai → New York · Business</h1>
+   <span class="pill"><span class="dot"></span>Updated 2026-06-16 04:14 UTC</span>
+ </div>
+ <p class="route-line"><b>PVG</b> → <b>JFK,EWR</b> · depart <b>2026-12-19</b> · return <b>2027-01-01</b> · 1 adult · alert under <b>$6500</b></p>
+
+ <div class='hero deal'><div class='hero-tag'>DEAL FOUND</div><div class='hero-price'>$5980</div><div class='hero-sub'>business class · under your $6500 target · alert emailed to jeannekang@hotmail.com</div><a class='hero-cta' href='https://g/3' target='_blank' rel='noopener'>Book Asiana, United →</a></div>
+
+ <div class="grid">
+   <div class="stat"><div class="k">Lowest fare now</div><div class="v">$5980</div></div>
+   <div class="stat"><div class="k">Alert threshold</div><div class="v">$6500</div></div>
+   <div class="stat"><div class="k">Options found</div><div class="v">5</div></div>
+   <div class="stat"><div class="k">Sources searched</div><div class="v sm">Amadeus (GDS), Google Flights (SerpApi), Kiwi (Tequila)</div></div>
+ </div>
+
+ <p class="sec">All options · cheapest first</p>
+ <div class="table-card">
+ <table>
+  <thead><tr><th>Price</th><th>Airline(s)</th><th>Type</th><th>Routing</th><th>Source</th><th></th></tr></thead>
+  <tbody><tr><td class='price'>$5980</td><td class='air'>Asiana, United<span class='tag tag-best'>Lowest</span><span class='tag tag-via'>via Seoul/Tokyo</span></td><td><span class='chip k-split'>Split-ticket</span></td><td class='route'>ICN</td><td class='src'>Google Flights (SerpApi)</td><td><a class='book' href='https://g/3' target='_blank' rel='noopener'>Book →</a></td></tr><tr><td class='price'>$6050</td><td class='air'>ANA, Asiana<span class='tag tag-via'>via Seoul/Tokyo</span></td><td><span class='chip k-split'>Split-ticket</span></td><td class='route'>HND → ICN</td><td class='src'>Kiwi (Tequila)</td><td><a class='book' href='https://kiwi/deep' target='_blank' rel='noopener'>Book →</a></td></tr><tr><td class='price'>$6190</td><td class='air'>Hainan</td><td><span class='chip k-non'>Nonstop</span></td><td class='route'>Nonstop</td><td class='src'>Google Flights (SerpApi)</td><td><a class='book' href='https://g/1' target='_blank' rel='noopener'>Book →</a></td></tr><tr><td class='price'>$6420</td><td class='air'>United<span class='tag tag-via'>via Seoul/Tokyo</span></td><td><span class='chip k-con'>Connecting</span></td><td class='route'>NRT</td><td class='src'>Amadeus (GDS)</td><td><a class='book' href='https://a/1' target='_blank' rel='noopener'>Book →</a></td></tr><tr><td class='price'>$7250</td><td class='air'>Air China</td><td><span class='chip k-con'>Connecting</span></td><td class='route'>PEK</td><td class='src'>Google Flights (SerpApi)</td><td><a class='book' href='https://g/2' target='_blank' rel='noopener'>Book →</a></td></tr></tbody>
+ </table>
+ </div>
+
+ <footer>Auto-refreshes hourly via GitHub Actions; this page also reloads itself every 15 min.<br>
+   Prices are <b>indicative</b> and can change between searches — always confirm the final fare on the airline or OTA site before booking.</footer>
+</div></body></html>
