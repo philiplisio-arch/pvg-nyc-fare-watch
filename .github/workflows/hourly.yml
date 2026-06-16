@@ -3,7 +3,12 @@ name: Hourly business-class fare check
 on:
   schedule:
     - cron: "0 * * * *"      # top of every hour (UTC)
-  workflow_dispatch: {}        # allow manual runs from the Actions tab
+  workflow_dispatch:           # allow manual runs from the Actions tab
+    inputs:
+      send_test:
+        description: "Send a one-off test alert email"
+        type: boolean
+        default: false
 
 permissions:
   contents: write              # needed to commit the regenerated page
@@ -33,6 +38,7 @@ jobs:
           # Email alerts via AgentMail (alerts send only when this is set):
           AGENTMAIL_API_KEY:     ${{ secrets.AGENTMAIL_API_KEY }}
           AGENTMAIL_INBOX_ID:    ${{ vars.AGENTMAIL_INBOX_ID }}   # optional; auto-discovered if blank
+          SEND_TEST:             ${{ inputs.send_test }}          # true only for a manual test run
           # Overrides:
           ALERT_TO:              ${{ vars.ALERT_TO || 'jeannekang@hotmail.com' }}
           THRESHOLD_USD:         ${{ vars.THRESHOLD_USD || '6500' }}
