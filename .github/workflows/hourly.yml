@@ -30,13 +30,10 @@ jobs:
       - name: Run fare check
         env:
           SERPAPI_KEY:           ${{ secrets.SERPAPI_KEY }}
-          GMAIL_USER:            ${{ secrets.GMAIL_USER }}
-          GMAIL_APP_PASSWORD:    ${{ secrets.GMAIL_APP_PASSWORD }}
-          # Optional extra providers (auto-activate when set):
-          AMADEUS_CLIENT_ID:     ${{ secrets.AMADEUS_CLIENT_ID }}
-          AMADEUS_CLIENT_SECRET: ${{ secrets.AMADEUS_CLIENT_SECRET }}
-          KIWI_API_KEY:          ${{ secrets.KIWI_API_KEY }}
-          # Optional overrides:
+          # Email alerts via AgentMail (alerts send only when this is set):
+          AGENTMAIL_API_KEY:     ${{ secrets.AGENTMAIL_API_KEY }}
+          AGENTMAIL_INBOX_ID:    ${{ vars.AGENTMAIL_INBOX_ID }}   # optional; auto-discovered if blank
+          # Overrides:
           ALERT_TO:              ${{ vars.ALERT_TO || 'jeannekang@hotmail.com' }}
           THRESHOLD_USD:         ${{ vars.THRESHOLD_USD || '6500' }}
         run: python check_flights.py
