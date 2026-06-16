@@ -1,0 +1,250 @@
+{
+  "updated": "2026-06-16 04:56 UTC",
+  "threshold": 6500.0,
+  "deal": true,
+  "lowest": {
+    "source": "Google Flights (SerpApi)",
+    "price": 4515,
+    "airlines": [
+      "EgyptAir"
+    ],
+    "route": "PVG->JFK",
+    "vias": [
+      "CAI"
+    ],
+    "stops": 1,
+    "kind": "Connecting",
+    "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=USD&tfs=CBwQAhonEgoyMDI2LTEyLTE5agcIARIDUFZHcgcIARIDSkZLcgcIARIDRVdSGicSCjIwMjctMDEtMDFqBwgBEgNKRktqBwgBEgNFV1JyBwgBEgNQVkdAAUgDcAGYAQE&tfu=EgIIAQ",
+    "dates": "2026-12-19 / 2027-01-01",
+    "via_seoul_tokyo": false
+  },
+  "offers": [
+    {
+      "source": "Google Flights (SerpApi)",
+      "price": 4515,
+      "airlines": [
+        "EgyptAir"
+      ],
+      "route": "PVG->JFK",
+      "vias": [
+        "CAI"
+      ],
+      "stops": 1,
+      "kind": "Connecting",
+      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=USD&tfs=CBwQAhonEgoyMDI2LTEyLTE5agcIARIDUFZHcgcIARIDSkZLcgcIARIDRVdSGicSCjIwMjctMDEtMDFqBwgBEgNKRktqBwgBEgNFV1JyBwgBEgNQVkdAAUgDcAGYAQE&tfu=EgIIAQ",
+      "dates": "2026-12-19 / 2027-01-01",
+      "via_seoul_tokyo": false
+    },
+    {
+      "source": "Google Flights (SerpApi)",
+      "price": 5308,
+      "airlines": [
+        "Turkish Airlines"
+      ],
+      "route": "PVG->JFK",
+      "vias": [
+        "IST"
+      ],
+      "stops": 1,
+      "kind": "Connecting",
+      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=USD&tfs=CBwQAhonEgoyMDI2LTEyLTE5agcIARIDUFZHcgcIARIDSkZLcgcIARIDRVdSGicSCjIwMjctMDEtMDFqBwgBEgNKRktqBwgBEgNFV1JyBwgBEgNQVkdAAUgDcAGYAQE&tfu=EgIIAQ",
+      "dates": "2026-12-19 / 2027-01-01",
+      "via_seoul_tokyo": false
+    },
+    {
+      "source": "Google Flights (SerpApi)",
+      "price": 5343,
+      "airlines": [
+        "Asiana Airlines"
+      ],
+      "route": "PVG->JFK",
+      "vias": [
+        "ICN"
+      ],
+      "stops": 1,
+      "kind": "Connecting",
+      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=USD&tfs=CBwQAhonEgoyMDI2LTEyLTE5agcIARIDUFZHcgcIARIDSkZLcgcIARIDRVdSGicSCjIwMjctMDEtMDFqBwgBEgNKRktqBwgBEgNFV1JyBwgBEgNQVkdAAUgDcAGYAQE&tfu=EgIIAQ",
+      "dates": "2026-12-19 / 2027-01-01",
+      "via_seoul_tokyo": true
+    },
+    {
+      "source": "Google Flights (SerpApi)",
+      "price": 5445,
+      "airlines": [
+        "Asiana Airlines"
+      ],
+      "route": "PVG->JFK",
+      "vias": [
+        "ICN"
+      ],
+      "stops": 1,
+      "kind": "Connecting",
+      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=USD&tfs=CBwQAhonEgoyMDI2LTEyLTE5agcIARIDUFZHcgcIARIDSkZLcgcIARIDRVdSGicSCjIwMjctMDEtMDFqBwgBEgNKRktqBwgBEgNFV1JyBwgBEgNQVkdAAUgDcAGYAQE&tfu=EgIIAQ",
+      "dates": "2026-12-19 / 2027-01-01",
+      "via_seoul_tokyo": true
+    },
+    {
+      "source": "Google Flights (SerpApi)",
+      "price": 5713,
+      "airlines": [
+        "Air Canada"
+      ],
+      "route": "PVG->JFK",
+      "vias": [
+        "YVR",
+        "YYZ"
+      ],
+      "stops": 2,
+      "kind": "Connecting",
+      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=USD&tfs=CBwQAhonEgoyMDI2LTEyLTE5agcIARIDUFZHcgcIARIDSkZLcgcIARIDRVdSGicSCjIwMjctMDEtMDFqBwgBEgNKRktqBwgBEgNFV1JyBwgBEgNQVkdAAUgDcAGYAQE&tfu=EgIIAQ",
+      "dates": "2026-12-19 / 2027-01-01",
+      "via_seoul_tokyo": false
+    },
+    {
+      "source": "Google Flights (SerpApi)",
+      "price": 6070,
+      "airlines": [
+        "EgyptAir"
+      ],
+      "route": "PVG<->JFK,EWR",
+      "vias": [
+        "CAI"
+      ],
+      "stops": 2,
+      "kind": "Split-ticket",
+      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=USD&tfs=CBwQAhonEgoyMDI2LTEyLTE5agcIARIDUFZHcgcIARIDSkZLcgcIARIDRVdSQAFIA3ABmAEC&tfu=EgIIAQ",
+      "dates": "2026-12-19 / 2027-01-01",
+      "via_seoul_tokyo": false
+    },
+    {
+      "source": "Google Flights (SerpApi)",
+      "price": 6218,
+      "airlines": [
+        "SWISS"
+      ],
+      "route": "PVG->EWR",
+      "vias": [
+        "ZRH"
+      ],
+      "stops": 1,
+      "kind": "Connecting",
+      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=USD&tfs=CBwQAhonEgoyMDI2LTEyLTE5agcIARIDUFZHcgcIARIDSkZLcgcIARIDRVdSGicSCjIwMjctMDEtMDFqBwgBEgNKRktqBwgBEgNFV1JyBwgBEgNQVkdAAUgDcAGYAQE&tfu=EgIIAQ",
+      "dates": "2026-12-19 / 2027-01-01",
+      "via_seoul_tokyo": false
+    },
+    {
+      "source": "Google Flights (SerpApi)",
+      "price": 6571,
+      "airlines": [
+        "Etihad"
+      ],
+      "route": "PVG->JFK",
+      "vias": [
+        "AUH"
+      ],
+      "stops": 1,
+      "kind": "Connecting",
+      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=USD&tfs=CBwQAhonEgoyMDI2LTEyLTE5agcIARIDUFZHcgcIARIDSkZLcgcIARIDRVdSGicSCjIwMjctMDEtMDFqBwgBEgNKRktqBwgBEgNFV1JyBwgBEgNQVkdAAUgDcAGYAQE&tfu=EgIIAQ",
+      "dates": "2026-12-19 / 2027-01-01",
+      "via_seoul_tokyo": false
+    },
+    {
+      "source": "Google Flights (SerpApi)",
+      "price": 6700,
+      "airlines": [
+        "Korean Air"
+      ],
+      "route": "PVG->JFK",
+      "vias": [
+        "ICN"
+      ],
+      "stops": 1,
+      "kind": "Connecting",
+      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=USD&tfs=CBwQAhonEgoyMDI2LTEyLTE5agcIARIDUFZHcgcIARIDSkZLcgcIARIDRVdSGicSCjIwMjctMDEtMDFqBwgBEgNKRktqBwgBEgNFV1JyBwgBEgNQVkdAAUgDcAGYAQE&tfu=EgIIAQ",
+      "dates": "2026-12-19 / 2027-01-01",
+      "via_seoul_tokyo": true
+    },
+    {
+      "source": "Google Flights (SerpApi)",
+      "price": 7242,
+      "airlines": [
+        "Asiana Airlines",
+        "United"
+      ],
+      "route": "PVG->EWR",
+      "vias": [
+        "ICN"
+      ],
+      "stops": 1,
+      "kind": "Connecting",
+      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=USD&tfs=CBwQAhonEgoyMDI2LTEyLTE5agcIARIDUFZHcgcIARIDSkZLcgcIARIDRVdSGicSCjIwMjctMDEtMDFqBwgBEgNKRktqBwgBEgNFV1JyBwgBEgNQVkdAAUgDcAGYAQE&tfu=EgIIAQ",
+      "dates": "2026-12-19 / 2027-01-01",
+      "via_seoul_tokyo": true
+    },
+    {
+      "source": "Google Flights (SerpApi)",
+      "price": 7336,
+      "airlines": [
+        "ANA"
+      ],
+      "route": "PVG->JFK",
+      "vias": [
+        "HND"
+      ],
+      "stops": 1,
+      "kind": "Connecting",
+      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=USD&tfs=CBwQAhonEgoyMDI2LTEyLTE5agcIARIDUFZHcgcIARIDSkZLcgcIARIDRVdSGicSCjIwMjctMDEtMDFqBwgBEgNKRktqBwgBEgNFV1JyBwgBEgNQVkdAAUgDcAGYAQE&tfu=EgIIAQ",
+      "dates": "2026-12-19 / 2027-01-01",
+      "via_seoul_tokyo": true
+    },
+    {
+      "source": "Google Flights (SerpApi)",
+      "price": 7346,
+      "airlines": [
+        "ANA",
+        "United"
+      ],
+      "route": "PVG->EWR",
+      "vias": [
+        "HND"
+      ],
+      "stops": 1,
+      "kind": "Connecting",
+      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=USD&tfs=CBwQAhonEgoyMDI2LTEyLTE5agcIARIDUFZHcgcIARIDSkZLcgcIARIDRVdSGicSCjIwMjctMDEtMDFqBwgBEgNKRktqBwgBEgNFV1JyBwgBEgNQVkdAAUgDcAGYAQE&tfu=EgIIAQ",
+      "dates": "2026-12-19 / 2027-01-01",
+      "via_seoul_tokyo": true
+    },
+    {
+      "source": "Google Flights (SerpApi)",
+      "price": 7573,
+      "airlines": [
+        "American"
+      ],
+      "route": "PVG->EWR",
+      "vias": [
+        "DFW"
+      ],
+      "stops": 1,
+      "kind": "Connecting",
+      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=USD&tfs=CBwQAhonEgoyMDI2LTEyLTE5agcIARIDUFZHcgcIARIDSkZLcgcIARIDRVdSGicSCjIwMjctMDEtMDFqBwgBEgNKRktqBwgBEgNFV1JyBwgBEgNQVkdAAUgDcAGYAQE&tfu=EgIIAQ",
+      "dates": "2026-12-19 / 2027-01-01",
+      "via_seoul_tokyo": false
+    },
+    {
+      "source": "Google Flights (SerpApi)",
+      "price": 8376,
+      "airlines": [
+        "Delta"
+      ],
+      "route": "PVG->JFK",
+      "vias": [
+        "DTW"
+      ],
+      "stops": 1,
+      "kind": "Connecting",
+      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=USD&tfs=CBwQAhonEgoyMDI2LTEyLTE5agcIARIDUFZHcgcIARIDSkZLcgcIARIDRVdSGicSCjIwMjctMDEtMDFqBwgBEgNKRktqBwgBEgNFV1JyBwgBEgNQVkdAAUgDcAGYAQE&tfu=EgIIAQ",
+      "dates": "2026-12-19 / 2027-01-01",
+      "via_seoul_tokyo": false
+    }
+  ]
+}
