@@ -44,10 +44,11 @@ LONGHAUL_CLASS  = os.getenv("LONGHAUL_CLASS", "3")      # 3 = business
 CONNECTOR_CLASS = os.getenv("CONNECTOR_CLASS", "1")     # 1 = economy (cheapest)
 CURRENCY        = "USD"
 
-ALERT_TO        = os.getenv("ALERT_TO", "jeannekang@hotmail.com")
-GMAIL_USER      = os.getenv("GMAIL_USER", "")
-GMAIL_APP_PASSWORD = os.getenv("GMAIL_APP_PASSWORD", "")
-EMAIL_ENABLED   = bool(GMAIL_USER and GMAIL_APP_PASSWORD)
+ALERT_TO            = os.getenv("ALERT_TO", "jeannekang@hotmail.com")
+AGENTMAIL_API_KEY   = os.getenv("AGENTMAIL_API_KEY", "")
+AGENTMAIL_INBOX_ID  = os.getenv("AGENTMAIL_INBOX_ID", "")  # optional; auto-discovered if blank
+AGENTMAIL_BASE      = "https://api.agentmail.to/v0"
+EMAIL_ENABLED       = bool(AGENTMAIL_API_KEY)
 
 SERPAPI_KEY     = os.getenv("SERPAPI_KEY", "")
 
@@ -220,20 +221,42 @@ def build():
 # --------------------------------------------------------------------------- #
 # Email (optional)
 # --------------------------------------------------------------------------- #
+def _agentmail_inbox():
+    """Return an inbox_id to send from: explicit env, else first existing, else create one."""
+    if AGENTMAIL_INBOX_ID:
+        return AGENTMAIL_INBOX_ID
+    auth = {"Authorization": "Bearer " + AGENTMAIL_API_KEY}
+    r = requests.get(AGENTMAIL_BASE + "/inboxes", headers=auth, timeout=HTTP_TIMEOUT)
+    r.raise_for_status()
+    inboxes = (r.json() or {}).get("inboxes", []) or []
+    if inboxes:
+        return inboxes[0].get("inbox_id")
+    r = requests.post(AGENTMAIL_BASE + "/inboxes",
+                      headers={"Authorization": "Bearer " + AGENTMAIL_API_KEY,
+                               "Content-Type": "application/json"},
+                      json={}, timeout=HTTP_TIMEOUT)
+    r.raise_for_status()
+    return (r.json() or {}).get("inbox_id")
+
+
 def send_email(subject, html_body):
     if not EMAIL_ENABLED:
-        log("Email skipped: Gmail credentials not set (email is optional).")
+        log("Email skipped: AGENTMAIL_API_KEY not set (email is optional).")
         return False
-    msg = MIMEMultipart("alternative")
-    msg["Subject"] = subject
-    msg["From"] = GMAIL_USER
-    msg["To"] = ALERT_TO
-    msg.attach(MIMEText(html_body, "html"))
     try:
-        with smtplib.SMTP_SSL("smtp.gmail.com", 465, timeout=30) as s:
-            s.login(GMAIL_USER, GMAIL_APP_PASSWORD)
-            s.sendmail(GMAIL_USER, [ALERT_TO], msg.as_string())
-        log("Alert email sent to " + ALERT_TO)
+        inbox_id = _agentmail_inbox()
+        if not inbox_id:
+            log("Email failed: no AgentMail inbox available.")
+            return False
+        r = requests.post(
+            AGENTMAIL_BASE + "/inboxes/" + inbox_id + "/messages/send",
+            headers={"Authorization": "Bearer " + AGENTMAIL_API_KEY,
+                     "Content-Type": "application/json"},
+            json={"to": ALERT_TO, "subject": subject, "html": html_body,
+                  "text": "Business-class fare alert - open the HTML version for details."},
+            timeout=HTTP_TIMEOUT)
+        r.raise_for_status()
+        log("Alert email sent to " + ALERT_TO + " via AgentMail inbox " + str(inbox_id))
         return True
     except Exception as ex:
         log("Email failed: " + str(ex))
