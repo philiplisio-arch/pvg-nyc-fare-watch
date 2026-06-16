@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-16 10:07 UTC",
-  "threshold": 6500.0,
-  "deal": true,
+  "updated": "2026-06-16 13:01 UTC",
+  "threshold": 4000.0,
+  "deal": false,
   "best_hub": "HND",
   "lowest": {
-    "price": 5041,
+    "price": 5040,
     "airlines": [
       "Asiana Airlines",
       "Korean Air"
@@ -16,11 +16,11 @@
     "hub": "HND",
     "hub_city": "Tokyo",
     "connector_price": 389,
-    "longhaul_price": 4652
+    "longhaul_price": 4651
   },
   "journeys": [
     {
-      "price": 5041,
+      "price": 5040,
       "airlines": [
         "Asiana Airlines",
         "Korean Air"
@@ -32,10 +32,10 @@
       "hub": "HND",
       "hub_city": "Tokyo",
       "connector_price": 389,
-      "longhaul_price": 4652
+      "longhaul_price": 4651
     },
     {
-      "price": 5231,
+      "price": 5226,
       "airlines": [
         "United"
       ],
@@ -46,7 +46,7 @@
       "hub": "ICN",
       "hub_city": "Seoul",
       "connector_price": 251,
-      "longhaul_price": 4980
+      "longhaul_price": 4975
     },
     {
       "price": 5343,
@@ -79,7 +79,7 @@
       "category": "direct"
     },
     {
-      "price": 7199,
+      "price": 7197,
       "airlines": [
         "United"
       ],
@@ -90,7 +90,7 @@
       "hub": "NRT",
       "hub_city": "Tokyo",
       "connector_price": 330,
-      "longhaul_price": 6869
+      "longhaul_price": 6867
     },
     {
       "price": 7242,
@@ -138,7 +138,7 @@
       "leg": "Connector Tokyo"
     },
     {
-      "price": 4652,
+      "price": 4651,
       "airlines": [
         "Asiana Airlines",
         "Korean Air"
