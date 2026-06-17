@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-17 11:48 UTC",
+  "updated": "2026-06-17 15:31 UTC",
   "threshold": 4000.0,
   "deal": false,
   "best_hub": "HND",
@@ -33,7 +33,7 @@
       "longhaul_price": 3928
     },
     {
-      "price": 5196,
+      "price": 5200,
       "airlines": [
         "United"
       ],
@@ -44,7 +44,7 @@
       "hub": "ICN",
       "hub_city": "Seoul",
       "connector_price": 250,
-      "longhaul_price": 4946
+      "longhaul_price": 4950
     },
     {
       "price": 5345,
