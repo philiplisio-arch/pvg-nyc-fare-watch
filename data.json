@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-17 21:06 UTC",
+  "updated": "2026-06-17 23:24 UTC",
   "threshold": 4000.0,
   "deal": false,
   "best_hub": "HND",
   "lowest": {
-    "price": 4306,
+    "price": 4310,
     "airlines": [
       "ANA"
     ],
@@ -15,11 +15,11 @@
     "hub": "HND",
     "hub_city": "Tokyo",
     "connector_price": 389,
-    "longhaul_price": 3917
+    "longhaul_price": 3921
   },
   "journeys": [
     {
-      "price": 4306,
+      "price": 4310,
       "airlines": [
         "ANA"
       ],
@@ -30,10 +30,10 @@
       "hub": "HND",
       "hub_city": "Tokyo",
       "connector_price": 389,
-      "longhaul_price": 3917
+      "longhaul_price": 3921
     },
     {
-      "price": 5155,
+      "price": 5157,
       "airlines": [
         "United"
       ],
@@ -44,7 +44,7 @@
       "hub": "ICN",
       "hub_city": "Seoul",
       "connector_price": 249,
-      "longhaul_price": 4906
+      "longhaul_price": 4908
     },
     {
       "price": 5345,
@@ -77,7 +77,7 @@
       "category": "direct"
     },
     {
-      "price": 7182,
+      "price": 7188,
       "airlines": [
         "United"
       ],
@@ -88,7 +88,7 @@
       "hub": "NRT",
       "hub_city": "Tokyo",
       "connector_price": 330,
-      "longhaul_price": 6852
+      "longhaul_price": 6858
     },
     {
       "price": 7245,
@@ -136,7 +136,7 @@
       "leg": "Connector Tokyo"
     },
     {
-      "price": 3917,
+      "price": 3921,
       "airlines": [
         "ANA"
       ],
