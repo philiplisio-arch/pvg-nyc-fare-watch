@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-17 06:11 UTC",
+  "updated": "2026-06-17 11:48 UTC",
   "threshold": 4000.0,
   "deal": false,
   "best_hub": "HND",
@@ -33,7 +33,7 @@
       "longhaul_price": 3928
     },
     {
-      "price": 5208,
+      "price": 5196,
       "airlines": [
         "United"
       ],
@@ -43,8 +43,8 @@
       "category": "split",
       "hub": "ICN",
       "hub_city": "Seoul",
-      "connector_price": 251,
-      "longhaul_price": 4957
+      "connector_price": 250,
+      "longhaul_price": 4946
     },
     {
       "price": 5345,
@@ -77,7 +77,7 @@
       "category": "direct"
     },
     {
-      "price": 7201,
+      "price": 7202,
       "airlines": [
         "United"
       ],
@@ -87,7 +87,7 @@
       "category": "split",
       "hub": "NRT",
       "hub_city": "Tokyo",
-      "connector_price": 330,
+      "connector_price": 331,
       "longhaul_price": 6871
     },
     {
