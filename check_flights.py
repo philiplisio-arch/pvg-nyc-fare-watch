@@ -456,7 +456,7 @@ def render_page(journeys, components, best, deal, now):
   <tbody>""" + journey_rows(journeys) + """</tbody>
  </table></div>
  """ + split_block + """
- <footer>Auto-refreshes hourly via GitHub Actions; this page also reloads itself every 15 min.<br>
+ <footer>Refreshes 4x/day (every 6h) via GitHub Actions; this page also reloads itself every 15 min.<br>
    Hub-split = a Seoul/Tokyo &lt;-&gt; New York business round trip plus a separate economy PVG &lt;-&gt; hub connector, booked as two tickets.
    Prices are <b>indicative</b> - confirm each ticket on the airline/OTA site before booking.</footer>
 </div></body></html>""")
