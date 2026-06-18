@@ -2,7 +2,7 @@ name: Hourly business-class fare check
 
 on:
   schedule:
-    - cron: "0 * * * *"      # top of every hour (UTC)
+    - cron: "0 0,6,12,18 * * *"   # 4x/day, every 6 hours (UTC)
   workflow_dispatch:           # allow manual runs from the Actions tab
     inputs:
       send_test:
