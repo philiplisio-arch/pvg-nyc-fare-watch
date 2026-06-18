@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-18 15:17 UTC",
+  "updated": "2026-06-18 20:22 UTC",
   "threshold": 4000.0,
   "deal": false,
   "best_hub": "NRT",
   "lowest": {
-    "price": 4125,
+    "price": 4113,
     "airlines": [
       "ANA",
       "United"
@@ -15,12 +15,12 @@
     "category": "split",
     "hub": "NRT",
     "hub_city": "Tokyo",
-    "connector_price": 330,
-    "longhaul_price": 3795
+    "connector_price": 329,
+    "longhaul_price": 3784
   },
   "journeys": [
     {
-      "price": 4125,
+      "price": 4113,
       "airlines": [
         "ANA",
         "United"
@@ -31,11 +31,11 @@
       "category": "split",
       "hub": "NRT",
       "hub_city": "Tokyo",
-      "connector_price": 330,
-      "longhaul_price": 3795
+      "connector_price": 329,
+      "longhaul_price": 3784
     },
     {
-      "price": 4303,
+      "price": 4291,
       "airlines": [
         "ANA"
       ],
@@ -46,10 +46,10 @@
       "hub": "HND",
       "hub_city": "Tokyo",
       "connector_price": 389,
-      "longhaul_price": 3914
+      "longhaul_price": 3902
     },
     {
-      "price": 5136,
+      "price": 5124,
       "airlines": [
         "United"
       ],
@@ -60,7 +60,7 @@
       "hub": "ICN",
       "hub_city": "Seoul",
       "connector_price": 249,
-      "longhaul_price": 4887
+      "longhaul_price": 4875
     },
     {
       "price": 5345,
@@ -83,22 +83,22 @@
       "category": "direct"
     },
     {
+      "price": 6371,
+      "airlines": [
+        "ANA"
+      ],
+      "kind": "Connecting",
+      "route": "PVG -> JFK via HND  (round trip)",
+      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=USD&tfs=CBwQAhonEgoyMDI2LTEyLTE5agcIARIDUFZHcgcIARIDRVdScgcIARIDSkZLGicSCjIwMjctMDEtMDFqBwgBEgNFV1JqBwgBEgNKRktyBwgBEgNQVkdAAUgDcAGYAQE&tfu=EgIIAQ",
+      "category": "direct"
+    },
+    {
       "price": 6703,
       "airlines": [
         "Korean Air"
       ],
       "kind": "Connecting",
       "route": "PVG -> JFK via ICN  (round trip)",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=USD&tfs=CBwQAhonEgoyMDI2LTEyLTE5agcIARIDUFZHcgcIARIDRVdScgcIARIDSkZLGicSCjIwMjctMDEtMDFqBwgBEgNFV1JqBwgBEgNKRktyBwgBEgNQVkdAAUgDcAGYAQE&tfu=EgIIAQ",
-      "category": "direct"
-    },
-    {
-      "price": 7339,
-      "airlines": [
-        "ANA"
-      ],
-      "kind": "Connecting",
-      "route": "PVG -> JFK via HND  (round trip)",
       "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=USD&tfs=CBwQAhonEgoyMDI2LTEyLTE5agcIARIDUFZHcgcIARIDRVdScgcIARIDSkZLGicSCjIwMjctMDEtMDFqBwgBEgNFV1JqBwgBEgNKRktyBwgBEgNQVkdAAUgDcAGYAQE&tfu=EgIIAQ",
       "category": "direct"
     },
@@ -127,7 +127,7 @@
   ],
   "components": [
     {
-      "price": 330,
+      "price": 329,
       "airlines": [
         "Spring"
       ],
@@ -138,7 +138,7 @@
       "leg": "Connector Tokyo"
     },
     {
-      "price": 3795,
+      "price": 3784,
       "airlines": [
         "ANA",
         "United"
