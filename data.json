@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-20 03:23 UTC",
+  "updated": "2026-06-20 08:51 UTC",
   "threshold": 4000.0,
   "deal": false,
   "best_hub": "HND",
@@ -33,7 +33,7 @@
       "longhaul_price": 3904
     },
     {
-      "price": 5163,
+      "price": 5154,
       "airlines": [
         "United"
       ],
@@ -43,8 +43,8 @@
       "category": "split",
       "hub": "ICN",
       "hub_city": "Seoul",
-      "connector_price": 250,
-      "longhaul_price": 4913
+      "connector_price": 249,
+      "longhaul_price": 4905
     },
     {
       "price": 5335,
@@ -78,6 +78,16 @@
       "category": "direct"
     },
     {
+      "price": 6369,
+      "airlines": [
+        "ANA"
+      ],
+      "kind": "Connecting",
+      "route": "PVG -> JFK via NRT  (round trip)",
+      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=USD&tfs=CBwQAhonEgoyMDI2LTEyLTE5agcIARIDUFZHcgcIARIDRVdScgcIARIDSkZLGicSCjIwMjctMDEtMDFqBwgBEgNFV1JqBwgBEgNKRktyBwgBEgNQVkdAAUgDcAGYAQE&tfu=EgIIAQ",
+      "category": "direct"
+    },
+    {
       "price": 6691,
       "airlines": [
         "Korean Air"
@@ -88,7 +98,7 @@
       "category": "direct"
     },
     {
-      "price": 7157,
+      "price": 7156,
       "airlines": [
         "United"
       ],
@@ -99,7 +109,7 @@
       "hub": "NRT",
       "hub_city": "Tokyo",
       "connector_price": 329,
-      "longhaul_price": 6828
+      "longhaul_price": 6827
     },
     {
       "price": 7232,
