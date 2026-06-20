@@ -1,25 +1,41 @@
 {
-  "updated": "2026-06-20 13:55 UTC",
+  "updated": "2026-06-20 19:21 UTC",
   "threshold": 4000.0,
   "deal": false,
-  "best_hub": "HND",
+  "best_hub": "NRT",
   "lowest": {
-    "price": 4292,
+    "price": 4114,
     "airlines": [
-      "ANA"
+      "ANA",
+      "United"
     ],
     "kind": "Split-ticket",
-    "route": "PVG <-> HND <-> JFK  (2 tickets)",
+    "route": "PVG <-> NRT <-> EWR  (2 tickets)",
     "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=USD&tfs=CBwQAho5EgoyMDI2LTEyLTE5agcIARIDSUNOagcIARIDTlJUagcIARIDSE5EcgcIARIDRVdScgcIARIDSkZLGjkSCjIwMjctMDEtMDFqBwgBEgNFV1JqBwgBEgNKRktyBwgBEgNJQ05yBwgBEgNOUlRyBwgBEgNITkRAAUgDcAGYAQE&tfu=EgIIAQ",
     "category": "split",
-    "hub": "HND",
+    "hub": "NRT",
     "hub_city": "Tokyo",
-    "connector_price": 388,
-    "longhaul_price": 3904
+    "connector_price": 329,
+    "longhaul_price": 3785
   },
   "journeys": [
     {
-      "price": 4292,
+      "price": 4114,
+      "airlines": [
+        "ANA",
+        "United"
+      ],
+      "kind": "Split-ticket",
+      "route": "PVG <-> NRT <-> EWR  (2 tickets)",
+      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=USD&tfs=CBwQAho5EgoyMDI2LTEyLTE5agcIARIDSUNOagcIARIDTlJUagcIARIDSE5EcgcIARIDRVdScgcIARIDSkZLGjkSCjIwMjctMDEtMDFqBwgBEgNFV1JqBwgBEgNKRktyBwgBEgNJQ05yBwgBEgNOUlRyBwgBEgNITkRAAUgDcAGYAQE&tfu=EgIIAQ",
+      "category": "split",
+      "hub": "NRT",
+      "hub_city": "Tokyo",
+      "connector_price": 329,
+      "longhaul_price": 3785
+    },
+    {
+      "price": 4233,
       "airlines": [
         "ANA"
       ],
@@ -30,10 +46,10 @@
       "hub": "HND",
       "hub_city": "Tokyo",
       "connector_price": 388,
-      "longhaul_price": 3904
+      "longhaul_price": 3845
     },
     {
-      "price": 5154,
+      "price": 5162,
       "airlines": [
         "United"
       ],
@@ -43,8 +59,8 @@
       "category": "split",
       "hub": "ICN",
       "hub_city": "Seoul",
-      "connector_price": 249,
-      "longhaul_price": 4905
+      "connector_price": 250,
+      "longhaul_price": 4912
     },
     {
       "price": 5335,
@@ -98,20 +114,6 @@
       "category": "direct"
     },
     {
-      "price": 7156,
-      "airlines": [
-        "United"
-      ],
-      "kind": "Split-ticket",
-      "route": "PVG <-> NRT <-> EWR  (2 tickets)",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=USD&tfs=CBwQAho5EgoyMDI2LTEyLTE5agcIARIDSUNOagcIARIDTlJUagcIARIDSE5EcgcIARIDRVdScgcIARIDSkZLGjkSCjIwMjctMDEtMDFqBwgBEgNFV1JqBwgBEgNKRktyBwgBEgNJQ05yBwgBEgNOUlRyBwgBEgNITkRAAUgDcAGYAQE&tfu=EgIIAQ",
-      "category": "split",
-      "hub": "NRT",
-      "hub_city": "Tokyo",
-      "connector_price": 329,
-      "longhaul_price": 6827
-    },
-    {
       "price": 7232,
       "airlines": [
         "Asiana Airlines",
@@ -135,23 +137,24 @@
   ],
   "components": [
     {
-      "price": 388,
+      "price": 329,
       "airlines": [
-        "ANA"
+        "Spring"
       ],
       "kind": "Economy",
-      "route": "PVG <-> HND  (connector, round trip)",
+      "route": "PVG <-> NRT  (connector, round trip)",
       "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=USD&tfs=CBwQAhowEgoyMDI2LTEyLTE5agcIARIDUFZHcgcIARIDSUNOcgcIARIDTlJUcgcIARIDSE5EGjASCjIwMjctMDEtMDFqBwgBEgNJQ05qBwgBEgNOUlRqBwgBEgNITkRyBwgBEgNQVkdAAUgBcAGYAQE&tfu=EgIIAQ",
       "category": "component",
       "leg": "Connector Tokyo"
     },
     {
-      "price": 3904,
+      "price": 3785,
       "airlines": [
-        "ANA"
+        "ANA",
+        "United"
       ],
       "kind": "Business",
-      "route": "HND <-> JFK  (long-haul, round trip)",
+      "route": "NRT <-> EWR  (long-haul, round trip)",
       "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=USD&tfs=CBwQAho5EgoyMDI2LTEyLTE5agcIARIDSUNOagcIARIDTlJUagcIARIDSE5EcgcIARIDRVdScgcIARIDSkZLGjkSCjIwMjctMDEtMDFqBwgBEgNFV1JqBwgBEgNKRktyBwgBEgNJQ05yBwgBEgNOUlRyBwgBEgNITkRAAUgDcAGYAQE&tfu=EgIIAQ",
       "category": "component",
       "leg": "Long-haul Tokyo"
