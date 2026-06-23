@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-22 20:42 UTC",
+  "updated": "2026-06-23 02:54 UTC",
   "threshold": 4000.0,
   "deal": false,
   "best_hub": "NRT",
   "lowest": {
-    "price": 4107,
+    "price": 4109,
     "airlines": [
       "ANA",
       "United"
@@ -15,12 +15,12 @@
     "category": "split",
     "hub": "NRT",
     "hub_city": "Tokyo",
-    "connector_price": 328,
-    "longhaul_price": 3779
+    "connector_price": 329,
+    "longhaul_price": 3780
   },
   "journeys": [
     {
-      "price": 4107,
+      "price": 4109,
       "airlines": [
         "ANA",
         "United"
@@ -31,11 +31,11 @@
       "category": "split",
       "hub": "NRT",
       "hub_city": "Tokyo",
-      "connector_price": 328,
-      "longhaul_price": 3779
+      "connector_price": 329,
+      "longhaul_price": 3780
     },
     {
-      "price": 4285,
+      "price": 4286,
       "airlines": [
         "ANA"
       ],
@@ -46,10 +46,10 @@
       "hub": "HND",
       "hub_city": "Tokyo",
       "connector_price": 388,
-      "longhaul_price": 3897
+      "longhaul_price": 3898
     },
     {
-      "price": 5129,
+      "price": 5138,
       "airlines": [
         "United"
       ],
@@ -60,7 +60,7 @@
       "hub": "ICN",
       "hub_city": "Seoul",
       "connector_price": 249,
-      "longhaul_price": 4880
+      "longhaul_price": 4889
     },
     {
       "price": 5331,
@@ -137,7 +137,7 @@
   ],
   "components": [
     {
-      "price": 328,
+      "price": 329,
       "airlines": [
         "Spring"
       ],
@@ -148,7 +148,7 @@
       "leg": "Connector Tokyo"
     },
     {
-      "price": 3779,
+      "price": 3780,
       "airlines": [
         "ANA",
         "United"
