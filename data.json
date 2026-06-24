@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-24 14:23 UTC",
+  "updated": "2026-06-24 19:42 UTC",
   "threshold": 4000.0,
   "deal": false,
   "best_hub": "HND",
   "lowest": {
-    "price": 4567,
+    "price": 4565,
     "airlines": [
       "Asiana Airlines",
       "Korean Air"
@@ -16,11 +16,11 @@
     "hub": "HND",
     "hub_city": "Tokyo",
     "connector_price": 387,
-    "longhaul_price": 4180
+    "longhaul_price": 4178
   },
   "journeys": [
     {
-      "price": 4567,
+      "price": 4565,
       "airlines": [
         "Asiana Airlines",
         "Korean Air"
@@ -32,7 +32,7 @@
       "hub": "HND",
       "hub_city": "Tokyo",
       "connector_price": 387,
-      "longhaul_price": 4180
+      "longhaul_price": 4178
     },
     {
       "price": 4680,
@@ -49,7 +49,7 @@
       "longhaul_price": 4433
     },
     {
-      "price": 5319,
+      "price": 5421,
       "airlines": [
         "Asiana Airlines"
       ],
@@ -59,17 +59,7 @@
       "category": "direct"
     },
     {
-      "price": 5420,
-      "airlines": [
-        "Asiana Airlines"
-      ],
-      "kind": "Connecting",
-      "route": "PVG -> JFK via ICN  (round trip)",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=USD&tfs=CBwQAhonEgoyMDI2LTEyLTE5agcIARIDUFZHcgcIARIDRVdScgcIARIDSkZLGicSCjIwMjctMDEtMDFqBwgBEgNFV1JqBwgBEgNKRktyBwgBEgNQVkdAAUgDcAGYAQE&tfu=EgIIAQ",
-      "category": "direct"
-    },
-    {
-      "price": 6671,
+      "price": 6672,
       "airlines": [
         "Korean Air"
       ],
@@ -79,7 +69,7 @@
       "category": "direct"
     },
     {
-      "price": 7138,
+      "price": 7136,
       "airlines": [
         "United"
       ],
@@ -90,10 +80,10 @@
       "hub": "NRT",
       "hub_city": "Tokyo",
       "connector_price": 328,
-      "longhaul_price": 6810
+      "longhaul_price": 6808
     },
     {
-      "price": 7173,
+      "price": 7174,
       "airlines": [
         "ANA",
         "United"
@@ -138,7 +128,7 @@
       "leg": "Connector Tokyo"
     },
     {
-      "price": 4180,
+      "price": 4178,
       "airlines": [
         "Asiana Airlines",
         "Korean Air"
