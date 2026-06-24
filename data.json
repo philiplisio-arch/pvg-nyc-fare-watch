@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23 19:58 UTC",
+  "updated": "2026-06-24 02:55 UTC",
   "threshold": 4000.0,
   "deal": false,
   "best_hub": "HND",
@@ -35,7 +35,7 @@
       "longhaul_price": 4184
     },
     {
-      "price": 4716,
+      "price": 4705,
       "airlines": [
         "United"
       ],
@@ -46,12 +46,23 @@
       "hub": "ICN",
       "hub_city": "Seoul",
       "connector_price": 248,
-      "longhaul_price": 4468
+      "longhaul_price": 4457
     },
     {
       "price": 5319,
       "airlines": [
         "Asiana Airlines"
+      ],
+      "kind": "Connecting",
+      "route": "PVG -> JFK via ICN  (round trip)",
+      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=USD&tfs=CBwQAhonEgoyMDI2LTEyLTE5agcIARIDUFZHcgcIARIDRVdScgcIARIDSkZLGicSCjIwMjctMDEtMDFqBwgBEgNFV1JqBwgBEgNKRktyBwgBEgNQVkdAAUgDcAGYAQE&tfu=EgIIAQ",
+      "category": "direct"
+    },
+    {
+      "price": 5336,
+      "airlines": [
+        "Asiana Airlines",
+        "Korean Air"
       ],
       "kind": "Connecting",
       "route": "PVG -> JFK via ICN  (round trip)",
@@ -79,6 +90,16 @@
       "category": "direct"
     },
     {
+      "price": 6626,
+      "airlines": [
+        "Korean Air"
+      ],
+      "kind": "Connecting",
+      "route": "PVG -> JFK via ICN  (round trip)",
+      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=USD&tfs=CBwQAhonEgoyMDI2LTEyLTE5agcIARIDUFZHcgcIARIDRVdScgcIARIDSkZLGicSCjIwMjctMDEtMDFqBwgBEgNFV1JqBwgBEgNKRktyBwgBEgNQVkdAAUgDcAGYAQE&tfu=EgIIAQ",
+      "category": "direct"
+    },
+    {
       "price": 6671,
       "airlines": [
         "Korean Air"
@@ -89,7 +110,7 @@
       "category": "direct"
     },
     {
-      "price": 7146,
+      "price": 7145,
       "airlines": [
         "United"
       ],
@@ -100,7 +121,7 @@
       "hub": "NRT",
       "hub_city": "Tokyo",
       "connector_price": 328,
-      "longhaul_price": 6818
+      "longhaul_price": 6817
     },
     {
       "price": 7173,
@@ -121,16 +142,6 @@
       ],
       "kind": "Connecting",
       "route": "PVG -> EWR via ICN  (round trip)",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=USD&tfs=CBwQAhonEgoyMDI2LTEyLTE5agcIARIDUFZHcgcIARIDRVdScgcIARIDSkZLGicSCjIwMjctMDEtMDFqBwgBEgNFV1JqBwgBEgNKRktyBwgBEgNQVkdAAUgDcAGYAQE&tfu=EgIIAQ",
-      "category": "direct"
-    },
-    {
-      "price": 7303,
-      "airlines": [
-        "ANA"
-      ],
-      "kind": "Connecting",
-      "route": "PVG -> JFK via HND  (round trip)",
       "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=USD&tfs=CBwQAhonEgoyMDI2LTEyLTE5agcIARIDUFZHcgcIARIDRVdScgcIARIDSkZLGicSCjIwMjctMDEtMDFqBwgBEgNFV1JqBwgBEgNKRktyBwgBEgNQVkdAAUgDcAGYAQE&tfu=EgIIAQ",
       "category": "direct"
     }
