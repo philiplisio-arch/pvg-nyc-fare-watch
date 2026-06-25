@@ -2,7 +2,7 @@ name: Hourly business-class fare check
 
 on:
   schedule:
-    - cron: "0 0,6,12,18 * * *"   # 4x/day, every 6 hours (UTC)
+    - cron: "0 12 * * *"          # once a day at 12:00 UTC (3 SerpApi calls/day)
   workflow_dispatch:           # allow manual runs from the Actions tab
     inputs:
       send_test:
