@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-29 15:32 UTC",
+  "updated": "2026-06-30 14:00 UTC",
   "threshold": 4000.0,
   "deal": false,
   "best_hub": "HND",
   "lowest": {
-    "price": 4529,
+    "price": 4517,
     "airlines": [
       "Asiana Airlines",
       "Korean Air"
@@ -15,12 +15,12 @@
     "category": "split",
     "hub": "HND",
     "hub_city": "Tokyo",
-    "connector_price": 355,
-    "longhaul_price": 4174
+    "connector_price": 354,
+    "longhaul_price": 4163
   },
   "journeys": [
     {
-      "price": 4529,
+      "price": 4517,
       "airlines": [
         "Asiana Airlines",
         "Korean Air"
@@ -31,11 +31,11 @@
       "category": "split",
       "hub": "HND",
       "hub_city": "Tokyo",
-      "connector_price": 355,
-      "longhaul_price": 4174
+      "connector_price": 354,
+      "longhaul_price": 4163
     },
     {
-      "price": 4682,
+      "price": 4664,
       "airlines": [
         "United"
       ],
@@ -46,21 +46,41 @@
       "hub": "ICN",
       "hub_city": "Seoul",
       "connector_price": 247,
-      "longhaul_price": 4435
+      "longhaul_price": 4417
     },
     {
-      "price": 6632,
+      "price": 5317,
       "airlines": [
-        "ANA",
-        "United"
+        "Asiana Airlines"
       ],
       "kind": "Connecting",
-      "route": "PVG -> EWR via HND  (round trip)",
+      "route": "PVG -> JFK via ICN  (round trip)",
       "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=USD&tfs=CBwQAhonEgoyMDI2LTEyLTE5agcIARIDUFZHcgcIARIDRVdScgcIARIDSkZLGicSCjIwMjctMDEtMDFqBwgBEgNFV1JqBwgBEgNKRktyBwgBEgNQVkdAAUgDcAGYAQE&tfu=EgIIAQ",
       "category": "direct"
     },
     {
-      "price": 7130,
+      "price": 5317,
+      "airlines": [
+        "Asiana Airlines",
+        "Korean Air"
+      ],
+      "kind": "Connecting",
+      "route": "PVG -> JFK via ICN  (round trip)",
+      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=USD&tfs=CBwQAhonEgoyMDI2LTEyLTE5agcIARIDUFZHcgcIARIDRVdScgcIARIDSkZLGicSCjIwMjctMDEtMDFqBwgBEgNFV1JqBwgBEgNKRktyBwgBEgNQVkdAAUgDcAGYAQE&tfu=EgIIAQ",
+      "category": "direct"
+    },
+    {
+      "price": 5419,
+      "airlines": [
+        "Asiana Airlines"
+      ],
+      "kind": "Connecting",
+      "route": "PVG -> JFK via ICN  (round trip)",
+      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=USD&tfs=CBwQAhonEgoyMDI2LTEyLTE5agcIARIDUFZHcgcIARIDRVdScgcIARIDSkZLGicSCjIwMjctMDEtMDFqBwgBEgNFV1JqBwgBEgNKRktyBwgBEgNQVkdAAUgDcAGYAQE&tfu=EgIIAQ",
+      "category": "direct"
+    },
+    {
+      "price": 7111,
       "airlines": [
         "United"
       ],
@@ -70,11 +90,11 @@
       "category": "split",
       "hub": "NRT",
       "hub_city": "Tokyo",
-      "connector_price": 328,
-      "longhaul_price": 6802
+      "connector_price": 327,
+      "longhaul_price": 6784
     },
     {
-      "price": 7202,
+      "price": 7206,
       "airlines": [
         "Asiana Airlines",
         "United"
@@ -85,17 +105,7 @@
       "category": "direct"
     },
     {
-      "price": 7295,
-      "airlines": [
-        "ANA"
-      ],
-      "kind": "Connecting",
-      "route": "PVG -> JFK via HND  (round trip)",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=USD&tfs=CBwQAhonEgoyMDI2LTEyLTE5agcIARIDUFZHcgcIARIDRVdScgcIARIDSkZLGicSCjIwMjctMDEtMDFqBwgBEgNFV1JqBwgBEgNKRktyBwgBEgNQVkdAAUgDcAGYAQE&tfu=EgIIAQ",
-      "category": "direct"
-    },
-    {
-      "price": 9432,
+      "price": 8861,
       "airlines": [
         "Korean Air"
       ],
@@ -107,7 +117,7 @@
   ],
   "components": [
     {
-      "price": 355,
+      "price": 354,
       "airlines": [
         "Peach Aviation"
       ],
@@ -118,7 +128,7 @@
       "leg": "Connector Tokyo"
     },
     {
-      "price": 4174,
+      "price": 4163,
       "airlines": [
         "Asiana Airlines",
         "Korean Air"
