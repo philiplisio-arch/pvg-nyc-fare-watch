@@ -1,10 +1,10 @@
 {
-  "updated": "2026-07-01 14:12 UTC",
+  "updated": "2026-07-02 13:41 UTC",
   "threshold": 4000.0,
   "deal": false,
   "best_hub": "ICN",
   "lowest": {
-    "price": 4490,
+    "price": 4529,
     "airlines": [
       "United"
     ],
@@ -14,12 +14,12 @@
     "category": "split",
     "hub": "ICN",
     "hub_city": "Seoul",
-    "connector_price": 233,
-    "longhaul_price": 4257
+    "connector_price": 234,
+    "longhaul_price": 4295
   },
   "journeys": [
     {
-      "price": 4490,
+      "price": 4529,
       "airlines": [
         "United"
       ],
@@ -29,11 +29,11 @@
       "category": "split",
       "hub": "ICN",
       "hub_city": "Seoul",
-      "connector_price": 233,
-      "longhaul_price": 4257
+      "connector_price": 234,
+      "longhaul_price": 4295
     },
     {
-      "price": 5067,
+      "price": 5121,
       "airlines": [
         "Asiana Airlines",
         "Korean Air"
@@ -44,11 +44,11 @@
       "category": "split",
       "hub": "HND",
       "hub_city": "Tokyo",
-      "connector_price": 366,
-      "longhaul_price": 4701
+      "connector_price": 368,
+      "longhaul_price": 4753
     },
     {
-      "price": 5317,
+      "price": 5316,
       "airlines": [
         "Asiana Airlines"
       ],
@@ -58,7 +58,7 @@
       "category": "direct"
     },
     {
-      "price": 5317,
+      "price": 5316,
       "airlines": [
         "Asiana Airlines",
         "Korean Air"
@@ -69,7 +69,7 @@
       "category": "direct"
     },
     {
-      "price": 5417,
+      "price": 5416,
       "airlines": [
         "Asiana Airlines"
       ],
@@ -79,7 +79,7 @@
       "category": "direct"
     },
     {
-      "price": 6091,
+      "price": 6090,
       "airlines": [
         "Korean Air"
       ],
@@ -100,7 +100,7 @@
       "category": "direct"
     },
     {
-      "price": 7231,
+      "price": 7307,
       "airlines": [
         "United"
       ],
@@ -110,13 +110,13 @@
       "category": "split",
       "hub": "NRT",
       "hub_city": "Tokyo",
-      "connector_price": 339,
-      "longhaul_price": 6892
+      "connector_price": 340,
+      "longhaul_price": 6967
     }
   ],
   "components": [
     {
-      "price": 233,
+      "price": 234,
       "airlines": [
         "Asiana Airlines"
       ],
@@ -127,7 +127,7 @@
       "leg": "Connector Seoul"
     },
     {
-      "price": 4257,
+      "price": 4295,
       "airlines": [
         "United"
       ],
