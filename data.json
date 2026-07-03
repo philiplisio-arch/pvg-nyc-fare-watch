@@ -1,39 +1,39 @@
 {
-  "updated": "2026-07-02 13:41 UTC",
+  "updated": "2026-07-03 13:45 UTC",
   "threshold": 4000.0,
   "deal": false,
   "best_hub": "ICN",
   "lowest": {
-    "price": 4529,
+    "price": 4745,
     "airlines": [
-      "United"
+      "Korean Air"
     ],
     "kind": "Split-ticket",
-    "route": "PVG <-> ICN <-> EWR  (2 tickets)",
+    "route": "PVG <-> ICN <-> JFK  (2 tickets)",
     "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=USD&tfs=CBwQAho5EgoyMDI2LTEyLTE5agcIARIDSUNOagcIARIDTlJUagcIARIDSE5EcgcIARIDRVdScgcIARIDSkZLGjkSCjIwMjctMDEtMDFqBwgBEgNFV1JqBwgBEgNKRktyBwgBEgNJQ05yBwgBEgNOUlRyBwgBEgNITkRAAUgDcAGYAQE&tfu=EgIIAQ",
     "category": "split",
     "hub": "ICN",
     "hub_city": "Seoul",
-    "connector_price": 234,
-    "longhaul_price": 4295
+    "connector_price": 235,
+    "longhaul_price": 4510
   },
   "journeys": [
     {
-      "price": 4529,
+      "price": 4745,
       "airlines": [
-        "United"
+        "Korean Air"
       ],
       "kind": "Split-ticket",
-      "route": "PVG <-> ICN <-> EWR  (2 tickets)",
+      "route": "PVG <-> ICN <-> JFK  (2 tickets)",
       "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=USD&tfs=CBwQAho5EgoyMDI2LTEyLTE5agcIARIDSUNOagcIARIDTlJUagcIARIDSE5EcgcIARIDRVdScgcIARIDSkZLGjkSCjIwMjctMDEtMDFqBwgBEgNFV1JqBwgBEgNKRktyBwgBEgNJQ05yBwgBEgNOUlRyBwgBEgNITkRAAUgDcAGYAQE&tfu=EgIIAQ",
       "category": "split",
       "hub": "ICN",
       "hub_city": "Seoul",
-      "connector_price": 234,
-      "longhaul_price": 4295
+      "connector_price": 235,
+      "longhaul_price": 4510
     },
     {
-      "price": 5121,
+      "price": 5113,
       "airlines": [
         "Asiana Airlines",
         "Korean Air"
@@ -45,10 +45,10 @@
       "hub": "HND",
       "hub_city": "Tokyo",
       "connector_price": 368,
-      "longhaul_price": 4753
+      "longhaul_price": 4745
     },
     {
-      "price": 5316,
+      "price": 5320,
       "airlines": [
         "Asiana Airlines"
       ],
@@ -58,7 +58,7 @@
       "category": "direct"
     },
     {
-      "price": 5316,
+      "price": 5320,
       "airlines": [
         "Asiana Airlines",
         "Korean Air"
@@ -69,7 +69,7 @@
       "category": "direct"
     },
     {
-      "price": 5416,
+      "price": 5421,
       "airlines": [
         "Asiana Airlines"
       ],
@@ -79,7 +79,7 @@
       "category": "direct"
     },
     {
-      "price": 6090,
+      "price": 6095,
       "airlines": [
         "Korean Air"
       ],
@@ -89,7 +89,7 @@
       "category": "direct"
     },
     {
-      "price": 7203,
+      "price": 7208,
       "airlines": [
         "Asiana Airlines",
         "United"
@@ -100,7 +100,7 @@
       "category": "direct"
     },
     {
-      "price": 7307,
+      "price": 7296,
       "airlines": [
         "United"
       ],
@@ -110,13 +110,23 @@
       "category": "split",
       "hub": "NRT",
       "hub_city": "Tokyo",
-      "connector_price": 340,
-      "longhaul_price": 6967
+      "connector_price": 341,
+      "longhaul_price": 6955
+    },
+    {
+      "price": 7305,
+      "airlines": [
+        "ANA"
+      ],
+      "kind": "Connecting",
+      "route": "PVG -> JFK via HND  (round trip)",
+      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=USD&tfs=CBwQAhonEgoyMDI2LTEyLTE5agcIARIDUFZHcgcIARIDRVdScgcIARIDSkZLGicSCjIwMjctMDEtMDFqBwgBEgNFV1JqBwgBEgNKRktyBwgBEgNQVkdAAUgDcAGYAQE&tfu=EgIIAQ",
+      "category": "direct"
     }
   ],
   "components": [
     {
-      "price": 234,
+      "price": 235,
       "airlines": [
         "Asiana Airlines"
       ],
@@ -127,12 +137,12 @@
       "leg": "Connector Seoul"
     },
     {
-      "price": 4295,
+      "price": 4510,
       "airlines": [
-        "United"
+        "Korean Air"
       ],
       "kind": "Business",
-      "route": "ICN <-> EWR  (long-haul, round trip)",
+      "route": "ICN <-> JFK  (long-haul, round trip)",
       "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=USD&tfs=CBwQAho5EgoyMDI2LTEyLTE5agcIARIDSUNOagcIARIDTlJUagcIARIDSE5EcgcIARIDRVdScgcIARIDSkZLGjkSCjIwMjctMDEtMDFqBwgBEgNFV1JqBwgBEgNKRktyBwgBEgNJQ05yBwgBEgNOUlRyBwgBEgNITkRAAUgDcAGYAQE&tfu=EgIIAQ",
       "category": "component",
       "leg": "Long-haul Seoul"
